@@ -1,0 +1,4 @@
+the topics that aren't covered are 
+03:39:21 - Chapter 14 - Conditional Types
+04:00:38 - Chapter 15 - Local Development
+ref - https://youtu.be/K01hLNDdqg4?si=8A1OqIIYruDCTCXe
