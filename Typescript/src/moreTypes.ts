@@ -45,3 +45,20 @@ try {
 
 const data: unknown  = "chai aur code";
 const strData: string = data as string;
+
+
+// never 
+
+type Role = "admin" | "user"
+
+function redirectBaseOnRole(role: Role): void {
+    if(role === "admin"){
+        console.log("redirecting to admin dashboard");
+        return;
+    }
+
+    if(role === "user"){
+        console.log("redirecting to user dashboard");
+        return;
+    }
+}
