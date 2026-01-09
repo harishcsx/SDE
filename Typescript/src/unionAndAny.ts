@@ -5,7 +5,7 @@ let apiRequestStatus: "pending" | "sucess" | "error" = "pending";
 
 const orders = ["10", "20", "28", "42"]
 
-let currentOrder: string | undefined;
+let currentOrder: string | any;
 
 for(let order of orders) {
     if (order === "28") {
