@@ -26,7 +26,22 @@ let newValue: unknown;
 newValue = "chai";
 newValue = [1,3,4];
 newValue = 2.5;
-
+// won't give warnings while assigning but raise error while using it 
 if (typeof newValue === "string") {
     newValue.toUpperCase();
 }
+
+
+// try catch 
+
+try {
+
+} catch (error) {
+    if(error instanceof Error){
+        console.log(error.message);
+    }
+    console.log("Error", error);
+}
+
+const data: unknown  = "chai aur code";
+const strData: string = data as string;
