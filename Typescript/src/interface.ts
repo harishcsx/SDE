@@ -58,7 +58,7 @@ class Chai1 implements CupSize1 {
     size: "small" | "large" = "large";
 }
 
-
+// this syntax is called as literal types (as youi are literally defining you own type rather than selecting any perimitive type)
 type TEatype = "masala" | "ginger" | "lemon"
 
 function orderChai(t: TEatype){
@@ -94,4 +94,19 @@ const u1: User = {
     bio: "hx.ai"
  }
 
+
+// read only values 
+
+type config = {
+    readonly appName: string
+    version: number
+}
+
+// once you set sthe value for appName you can't modify it 
+const cfg: config = {
+    appName: "Masterji",
+    version: 1
+}
+// err 
+cfg.appName = "chaiCode"; 
 
